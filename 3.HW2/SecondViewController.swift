@@ -16,6 +16,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     
     @IBAction func signUp(_ sender: Any) {
+        
     }
     
     
@@ -30,34 +31,34 @@ class SecondViewController: UIViewController {
             return true
         }
     }
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if !emptyTexstField(text: fullname),
-           !emptyTexstField(text: mobilenumber),
-           !emptyTexstField(text: email),
-           !emptyTexstField(text: username),
-           !emptyTexstField(text: password) {
-            return false
-        }
-        else if !emptyTexstField(text: fullname){
-            return false
-        }
-        else if !emptyTexstField(text: mobilenumber){
-            return false
-        }
-        else if !emptyTexstField(text: email){
-            return false
-        }
-        else if !emptyTexstField(text: username){
-            return false
-        }
-        else if !emptyTexstField(text: password){
-            return false
-        }
-        else {
-            return true
-        }
-    }
-        
+//    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+//        if !emptyTexstField(text: fullname),
+//           !emptyTexstField(text: mobilenumber),
+//           !emptyTexstField(text: email),
+//           !emptyTexstField(text: username),
+//           !emptyTexstField(text: password) {
+//            return false
+//        }
+//        else if !emptyTexstField(text: fullname){
+//            return false
+//        }
+//        else if !emptyTexstField(text: mobilenumber){
+//            return false
+//        }
+//        else if !emptyTexstField(text: email){
+//            return false
+//        }
+//        else if !emptyTexstField(text: username){
+//            return false
+//        }
+//        else if !emptyTexstField(text: password){
+//            return false
+//        }
+//        else {
+//            return true
+//        }
+//    }
+//
        override func viewDidLoad() {
             super.viewDidLoad()
             
